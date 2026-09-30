@@ -79,6 +79,10 @@ Never weaken or rewrite an existing test solely to make a failure pass. Change a
 
 Use the `verification` skill for the detailed workflow when it is available.
 
+### Implementation Review
+
+Before considering non-trivial implementation work complete, use the `review-changes` skill to inspect the task's diff and directly affected code. Treat review as a required step separate from tests and other verification. Resolve Must fix findings and in-scope Should fix findings; report any remaining Consider findings. Skip the review only for trivial edits unless the user requests one.
+
 ## 5. Memory Bank
 
 For non-trivial projects, maintain concise durable context in a project-local `.memory/` directory. Use it for architectural decisions, completed milestones, important constraints, verification results, and paused complex work.
@@ -88,6 +92,8 @@ Read relevant memory before continuing existing work. Treat the current codebase
 Do not ask for permission to initialize or update the memory bank. If the project is a Git repository, ensure `.memory/` is ignored and never committed unless the user explicitly requests otherwise.
 
 Use the `memory-bank` skill for the detailed workflow when it is available.
+
+For non-trivial, multi-step implementation work, save a concise working plan in `.memory/current_task_state.md` before implementation. Include the steps and observable checks, update progress at meaningful milestones, and mark the plan complete or record the exact remaining work when pausing. Keep it out of memory for trivial or single-step work.
 
 ## 6. External Verification
 

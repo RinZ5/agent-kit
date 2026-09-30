@@ -28,6 +28,8 @@ Memory is supporting context, not the source of truth. When memory conflicts wit
 
 ## Update
 
+For non-trivial, multi-step implementation work, create or update `.memory/current_task_state.md` with a concise working plan before implementation. List the implementation steps and an observable check for each. Update progress at meaningful milestones; when work completes, mark the plan complete or replace it with a concise durable summary. When pausing, record the exact remaining work and next useful verification step. Do not persist plans for trivial or single-step work.
+
 Update the memory bank when:
 
 - an architectural decision is made,

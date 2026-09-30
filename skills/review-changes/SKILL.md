@@ -5,7 +5,7 @@ description: Review non-trivial implementation changes for correctness, design q
 
 # Review Changes
 
-Review the implementation before considering the task complete. Use this skill after non-trivial implementation work or when the user explicitly asks for a code review. Skip it for trivial edits unless the user requests it.
+Use this skill as a required completion step after non-trivial implementation work, as well as whenever the user explicitly asks for a code review. Skip it for trivial edits unless the user requests it. Do not substitute tests, linting, formatting, or build verification for this review.
 
 This review is separate from tests, linting, formatting, and build verification. Those checks establish whether the code runs; this review determines whether the implementation is sensible and appropriate for the existing codebase.
 
